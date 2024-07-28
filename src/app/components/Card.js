@@ -1,13 +1,8 @@
 
 
-const Card = ({height,textColor,name}) => {
-    return (<div style={{
-        width: "350px",
-        backgroundColor: "red",
-        height,
-        color:textColor
-    }}>
-        <div>
+const Card = ({height,className,name}) => {
+    return (<div className="card" style={{height:`${height}px`}}>
+        <div className={`${className} hero_name`}>
         <p>name:</p>
         <p>{name}</p>
         </div>

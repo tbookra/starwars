@@ -9,7 +9,6 @@ export const heroSlice = createSlice({
   initialState,
   reducers: {
     setHero: (state, action) => {
-      console.log("action", action);
       state.heroName = action.payload;
     },
   },
